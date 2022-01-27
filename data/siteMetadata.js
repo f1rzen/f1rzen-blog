@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'F1rZeN',
   author: 'İlkay',
-  headerTitle: 'İstatistik Ve Makine Öğrenmesi',
+  headerTitle: 'F1rZeN',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'tr-tr',
   theme: 'system', // system, dark or light
@@ -36,10 +36,10 @@ const siteMetadata = {
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
-      repo: "f1rzen/f1rzen-blog",
-      repositoryId: "R_kgDOGvqvjg",
-      category: "Q&A",
-      categoryId: "DIC_kwDOGvqvjs4CA4am",
+      repo: 'f1rzen/f1rzen-blog',
+      repositoryId: 'R_kgDOGvqvjg',
+      category: 'Q&A',
+      categoryId: 'DIC_kwDOGvqvjs4CA4am',
       mapping: 'pathname', // supported options: pathname, url, title
       reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
       // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
@@ -52,7 +52,7 @@ const siteMetadata = {
       // If the theme option above is set to 'custom`
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css
-      position="top",
+
       themeURL: '',
     },
     utterancesConfig: {
