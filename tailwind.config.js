@@ -1,6 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-const { defaultHead } = require('next/head')
 
 module.exports = {
   content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
@@ -17,10 +16,10 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.indigo,
+        primary: colors.teal,
         gray: colors.neutral,
       },
       typography: (theme) => ({
