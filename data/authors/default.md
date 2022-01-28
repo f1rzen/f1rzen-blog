@@ -11,4 +11,4 @@ github: https://github.com/f1rzen
 
 Hacettepe Üniversitesi'nde İstatistik okuyorum. R, Python, ve WebDev ilgi alanlarım. "En etkili öğrenme metodu, öğretmektir" mottosuyla bu bloga yazıyorum. Profil fotoğrafımdaki kişi küçükken tek klavyede 3 kişi oynadığımız _Little Fighter 2_ oyunundaki _firzen_ karakteridir. Kendisini seviyorum.
 
-Bu blogun kaynak koduna GitHub hesabım üzerinden erişebilirsiniz. [Next.Js](https://nextjs.org/) ve [Tailwind CSS](https://tailwindcss.com/) ile [bu proje](https://github.com/timlrx/tailwind-nextjs-starter-blog) üzerinden forklandı.
+Bu blogun kaynak koduna GitHub hesabım üzerinden erişebilirsiniz. [Next.Js](https://nextjs.org/) ve [Tailwind CSS](https://tailwindcss.com/) ile [bu proje](https://github.com/timlrx/tailwind-nextjs-starter-blog) üzerinden forklanarak yapıldı.
