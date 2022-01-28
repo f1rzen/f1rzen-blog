@@ -1,4 +1,3 @@
-import Accordion from '../components/accordion'
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 
