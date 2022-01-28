@@ -1,13 +1,10 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'R - Shiny İle Covid-19 Verileri Web Aplikasyonu',
+    description: `Dünya genelindeki covid-19 verilerinin ggplot2 ve R Shiny ile birlikte tarayıcı üzerinde reaktif grafiklerle incelenmesi`,
+    imgSrc: '/static/images/rshiny.png',
+    href: 'https://ist347final.shinyapps.io/shiny',
   },
-
 ]
 
 export default projectsData

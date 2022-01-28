@@ -1,0 +1,40 @@
+---
+title: Neden Makine Öğrenmesi?
+date: '2022-01-27'
+tags: ['Makine Öğrenmesi']
+summary: 'Machine learninge kısa bir bakış. Makine öğrenmesinin günlük hayattaki kullanımları, yapabileceklerimiz.'
+---
+
+![machine_learning](/static/images/Machine_Learning_Banner.jpeg)
+
+**Makine Öğrenmesi** genel olarak verilerin üzerinden bilgi çıkarmak üzerinedir. İstatistik, yapay zeka, bilgisayar mühendisliği gibi alanların kesişimidir. Günümüzde makine öğrenme metodları hemen heryerdedir. Instagram uygulamasında ilgilerimize göre şekillenen reklamlar, Netflix'in izlediklerinize göre önerdiği diziler ve filmler, telefonunuzdaki galeri uygulamasının fotoğraflarınızdan arkadaşlarınızı belirleyebilmesi, makine öğrenmesi sayesinedir. Ben bu blog'da bunlardan ziyade daha çok bilimsel araştırmalar üzerinde kullanılan modellerle ilgileneceğim.
+
+### Neden Makine Öğrenmesi ❓
+
+Eskiden "akıllı" denilen uygulamalar, sistemler elle yazılmış "if/else" gibi kurallardan ibaretti. Spam maillerin kara listeye alındığı bir e-mail spam filtresi düşünün, bu tip bir elle yazılan uygulama yapmak için işin uzmanı, bilgili bir kişiye ihtiyaç olacak. Ayrıca tek bir görev için yazılmış bu program, görevde herhangi bir değişiklik olduğunda kuvvetle muhtemel bütün sistemi değiştirmeyi gerektirecek.
+
+Örneğin resimlerden yüz tespiti bu yaklaşımla başarısız olurken, makine öğrenmesi ile birlikte cebimizdeki telefon bile bu işlemi yapabiliyor.
+
+### Makine Öğrenmesinin Çözebileceği Problemler 👌
+
+Makine öğrenmesi algoritmalarının en başarılı olduğu konu, bilinen örneklerden genelleme yaparak; karar verme süreçlerini (decision-making processes) otomatikleştirmektir. Algoritmaya girdi ve çıktılar verilir, algoritma bunları işler ve daha sonrasında verilen girdiler üzerinden istenilen çıktıları bir insan yardımı olmadan vermeye başlar.
+
+Spam örneğimizden devam edelim. Makine öğrenmesine içinde spam olanlarını belirlediğimiz baya bir e-posta verelim (girdi). Makine bunları işledikten sonra verilen yeni bir e-postanın spam olup olmadığının tahminini (çıktı) yapabilecektir.
+
+Makine öğrenmesinin bu tip girdi/çıktı çiftleri ile öğrendiklerine _Supervised Learning_ (_denetimli öğrenme_) diyoruz. Zira bu girdi çıktıları "denetleyen" bir kullanıcı bulunuyor. Bu girdi ve çıktı verilerini oluşturmak oldukça zahmetli bir süreç olmasına rağmen _Supervised Learning_ algoritmaları bunları iyice anlamıştır ve performanslarını ölçmek oldukça kolaydır. Eğer uygulamanız _Supervised Learning_ ile formüle edilebilir ise, ve ona istediğiniz çıktıları içeren bir veriseti verirseniz, makine öğrenmesi sorununuzu çözebilecektir.
+
+#### Supervised Learning'e Örnekler:
+
+- Tıbbi görüntü üzerinden kanser hücrelerinin iyi huylu/kötü huylu olup olmadığını belirleme.
+- Kredi kartınızla yapılan şüpheli olabilecek işlemlerin tespiti.
+- Mektup üzerinde elle yazılmış rakamlardan posta kodunu belirleme.
+
+_Unsupervised Learning'de_ ise sadece girdiler bilinmektedir. Algoritmaya herhangi bir çıktı örneği verilmez. Genellikle anlaması ve uygulaması daha zordur.
+
+#### Unsupervised Learning'e Örnekler:
+
+- Verilen blog yazılarının hangi konuya ait olduğunu belirleme.
+- Benzer tercihlere sahip müşterileri kümelendirme.
+- Bir web sitesine yapılan anormal girişleri tespit etme.
+
+Supervised, Unsupervised her ikisi içinde verileri bilgisayarın anlayacağı bir hale getirmek çok önemlidir. Veriyi tablo olarak düşünebilirsiniz. Satırlara

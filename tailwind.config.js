@@ -16,10 +16,10 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
+        sans: ['Fraunces', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.indigo,
+        primary: colors.emerald,
         gray: colors.neutral,
       },
       typography: (theme) => ({

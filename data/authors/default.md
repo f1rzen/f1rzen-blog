@@ -9,6 +9,6 @@ linkedin: https://www.linkedin.com/in/ilkay-%C5%9Fafak-baytar/
 github: https://github.com/f1rzen
 ---
 
+Hacettepe Üniversitesi'nde İstatistik okuyorum. R, Python, ve WebDev ilgi alanlarım. "En etkili öğrenme metodu, öğretmektir" mottosuyla bu bloga yazıyorum. Profil fotoğrafımdaki kişi küçükken tek klavyede 3 kişi oynadığımız _Little Fighter 2_ oyunundaki _firzen_ karakteridir. Kendisini seviyorum.
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Bu blogun kaynak koduna github hesabım üzerinden erişebilirsiniz. [Next.Js](https://nextjs.org/) ve [Tailwind CSS](https://tailwindcss.com/) ile [bu proje](https://github.com/timlrx/tailwind-nextjs-starter-blog) üzerinden forklandı.
