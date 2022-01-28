@@ -19,7 +19,7 @@ export default function MakineOgrenmesi() {
                 <ul>
                   <li>
                     <h4>
-                      <a href="http://localhost:3000/blog/machine-learning/neden_makine_ogrenmesi">
+                      <a href="https://f1rzen.com/blog/machine-learning/neden_makine_ogrenmesi">
                         {' '}
                         ‣ Neden Makine Öğrenmesi?{' '}
                       </a>
