@@ -7,23 +7,35 @@ summary: 'Machine learninge kısa bir bakış. Makine öğrenmesinin günlük ha
 
 ![machine_learning](/static/images/Machine_Learning_Banner.jpeg)
 
-**Makine Öğrenmesi** genel olarak verilerin üzerinden bilgi çıkarmak üzerinedir. İstatistik, yapay zeka, bilgisayar mühendisliği gibi alanların kesişimidir. Günümüzde makine öğrenme metodları hemen heryerdedir. Instagram uygulamasında ilgilerimize göre şekillenen reklamlar, Netflix'in izlediklerinize göre önerdiği diziler ve filmler, telefonunuzdaki galeri uygulamasının fotoğraflarınızdan arkadaşlarınızı belirleyebilmesi, makine öğrenmesi sayesinedir. Ben bu blog'da bunlardan ziyade daha çok bilimsel araştırmalar üzerinde kullanılan modellerle ilgileneceğim.
+<TOCInline toc={props.toc} asDisclosure />
 
-### Neden Makine Öğrenmesi ❓
+Merhaba,
 
-Eskiden "akıllı" denilen uygulamalar, sistemler elle yazılmış "if/else" gibi kurallardan ibaretti. Spam maillerin kara listeye alındığı bir e-mail spam filtresi düşünün, bu tip bir elle yazılan uygulama yapmak için işin uzmanı, bilgili bir kişiye ihtiyaç olacak. Ayrıca tek bir görev için yazılmış bu program, görevde herhangi bir değişiklik olduğunda kuvvetle muhtemel bütün sistemi değiştirmeyi gerektirecek.
+Makine öğrenmesi öğrenirkenkitabı, elimden geldiğince anlatmaya çalışacağım. Bu konuyla ilgili akademik bir geçmişim yok. Eğitim görevlisi de değilim. Sormak istediğiniz, yanlış olduğunu düşündüğünüz yerleri en altta bulunan **Yorumları Gör** butonuna basarak GitHub hesabınızla yorum yapabilir; yazıyı, anlatımı beğenip beğenmediğinizi belirtmek için ifade bırakabilirsiniz.
 
-Örneğin resimlerden yüz tespiti bu yaklaşımla başarısız olurken, makine öğrenmesi ile birlikte cebimizdeki telefon bile bu işlemi yapabiliyor.
+![makine_ogrenmesi_kitap_resmi](/static/images/introduction_to_machine_learning_with_python_kitap.jpg)
 
-### Makine Öğrenmesinin Çözebileceği Problemler 👌
+Kaynak olarak [_O'Reilly - Introduction to Machine Learning with Python_](https://www.oreilly.com/library/view/introduction-to-machine/9781449369880/) kitabını kullanıyorum.
+
+## Giriş
+
+**Makine Öğrenmesi** genel olarak verilerin üzerinden bilgi çıkarmak üzerinedir. İstatistik, yapay zekâ, bilgisayar mühendisliği gibi alanların kesişimidir. Günümüzde makine öğrenme metotları hemen heryerdedir. Instagram uygulamasında ilgilerimize göre şekillenen reklamlar, Netflix'in izlediklerinize göre önerdiği diziler ve filmler, telefonunuzdaki galeri uygulamasının fotoğraflarınızdan arkadaşlarınızı belirleyebilmesi, makine öğrenmesi sayesinedir. Ben bu blog'da bunlardan ziyade daha çok bilimsel araştırmalar üzerinde kullanılan modellerle ilgileneceğim.
+
+## Neden Makine Öğrenmesi ❓
+
+Eskiden "akıllı" denilen uygulamalar, sistemler elle yazılmış "if/else" gibi kurallardan ibaretti. Spam maillerin kara listeye alındığı bir e-mail spam filtresi düşünün, bu tip bir elle yazılan uygulama yapmak için işin uzmanı, bilgili bir kişiye ihtiyaç olacak. Ayrıca tek bir görev için yazılmış bu program, görevde herhangi bir değişiklik olduğunda kuvvetle muhtemel bütün sistemi değiştirmeyi gerektirecek. Ancak aynı uygulamayı makine öğrenmesiyle yapmak, bize zamandan ve efordan tasarruf etmemize vesile olacak
+
+Resimlerden yüz tespiti insan eli ile yapıldığında başarısız olurken, makine öğrenmesi ile birlikte artık cebimizdeki telefon bile bu işlemi kolayca yapabiliyor.
+
+## Makine Öğrenmesinin Çözebileceği Problemler 👌
 
 Makine öğrenmesi algoritmalarının en başarılı olduğu konu, bilinen örneklerden genelleme yaparak; karar verme süreçlerini (decision-making processes) otomatikleştirmektir. Algoritmaya girdi ve çıktılar verilir, algoritma bunları işler ve daha sonrasında verilen girdiler üzerinden istenilen çıktıları bir insan yardımı olmadan vermeye başlar.
 
 Spam örneğimizden devam edelim. Makine öğrenmesine içinde spam olanlarını belirlediğimiz baya bir e-posta verelim (girdi). Makine bunları işledikten sonra verilen yeni bir e-postanın spam olup olmadığının tahminini (çıktı) yapabilecektir.
 
-Makine öğrenmesinin bu tip girdi/çıktı çiftleri ile öğrendiklerine _Supervised Learning_ (_denetimli öğrenme_) diyoruz. Zira bu girdi çıktıları "denetleyen" bir kullanıcı bulunuyor. Bu girdi ve çıktı verilerini oluşturmak oldukça zahmetli bir süreç olmasına rağmen _Supervised Learning_ algoritmaları bunları iyice anlamıştır ve performanslarını ölçmek oldukça kolaydır. Eğer uygulamanız _Supervised Learning_ ile formüle edilebilir ise, ve ona istediğiniz çıktıları içeren bir veriseti verirseniz, makine öğrenmesi sorununuzu çözebilecektir.
+Makine öğrenmesinin bu tip girdi/çıktı çiftleri ile öğrendiklerine _Supervised Learning_ (_denetimli öğrenme_) diyoruz. Zira bu girdi çıktıları "denetleyen" bir kullanıcı bulunuyor. Bu girdi ve çıktı verilerini oluşturmak oldukça zahmetli bir süreç olmasına rağmen _Supervised Learning_ algoritmaları bunları iyice anlamıştır ve performanslarını ölçmek oldukça kolaydır. Eğer uygulamanız _Supervised Learning_ ile formüle edilebilir ise, ve ona istediğiniz çıktıları içeren bir veri seti verirseniz, makine öğrenmesi sorununuzu çözebilecektir.
 
-#### Supervised Learning'e Örnekler:
+### 1. Supervised Learning'e Örnekler:
 
 - Tıbbi görüntü üzerinden kanser hücrelerinin iyi huylu/kötü huylu olup olmadığını belirleme.
 - Kredi kartınızla yapılan şüpheli olabilecek işlemlerin tespiti.
@@ -31,10 +43,33 @@ Makine öğrenmesinin bu tip girdi/çıktı çiftleri ile öğrendiklerine _Supe
 
 _Unsupervised Learning'de_ ise sadece girdiler bilinmektedir. Algoritmaya herhangi bir çıktı örneği verilmez. Genellikle anlaması ve uygulaması daha zordur.
 
-#### Unsupervised Learning'e Örnekler:
+### 2. Unsupervised Learning'e Örnekler:
 
 - Verilen blog yazılarının hangi konuya ait olduğunu belirleme.
 - Benzer tercihlere sahip müşterileri kümelendirme.
 - Bir web sitesine yapılan anormal girişleri tespit etme.
 
-Supervised, Unsupervised her ikisi içinde verileri bilgisayarın anlayacağı bir hale getirmek çok önemlidir. Veriyi tablo olarak düşünebilirsiniz. Satırlara
+Supervised, Unsupervised her ikisi içinde verileri bilgisayarın anlayacağı bir hale getirmek çok önemlidir. Genel olarak veriyi tablo şeklinde düşünmeniz gerekir. Örnek olarak [iris veri setinin](https://www.kaggle.com/uciml/iris) ilk satırlarına bakacak olursak,
+
+| SepalLengthCm | SepalWidthCm | PetalLengthCm | PetalLengthCm |
+| ------------- | ------------ | ------------- | ------------- |
+| 5.1           | 3.5          | 1.4           | 0.2           |
+| 4.9           | 3.5          | 1.4           | 0.2           |
+| 4.7           | 3.0          | 1.3           | 0.2           |
+| 4.6           | 3.2          | 1.5           | 0.2           |
+| 5.0           | 3.1          | 1.4           | 0.2           |
+
+İlk satırda iris çiçeklerinin ölçülen özelliklerini, diğer satırlarda ise her bir çiçek için bu özelliklere göre olan ölçümleri görüyoruz. Yani satırlar örneklem, sütunlar ise özellikleri göstermekte.
+
+## Veri Setini Bil, Ne Yapacağını Bil 🧠
+
+Makine öğrenmesi işlemlerine muhtemelen en önemli şeylerden biri çalıştığımız verinin ne olduğunu bilmektir. Rastgele bir algoritmaya verileri verip, doğru tahminler yapmasını beklemek saçma olur. algoritmalar çalıştığınız veri seti ve çözmeye çalıştığınız probleme özeldir. Şu sorulara cevap vermek ya da en azından aklımızda bulundurmak oldukça işimize yarayacaktır.
+
+- Hangi sorulara cevap arıyorum? Toplanan veri sorularıma cevap olabilecek mi?
+- Sorularımı makine öğrenimi üzerinde ifade etmenin en iyi yolu nedir?
+- Sorunu çözmeme yetecek kadar veri topladım mı?
+- Verilerin hangi özelliklerini aldım, ve bunlar doğru tahmini yapmamı sağlayacak mı?
+- Ugulamamın başarısını nasıl ölçeceğim?
+- Makine öğrenmesi ile yaptığım çözüm araştırmamı nasıl etkileyecek?
+
+Biraz geniş düşünecek olursak, makine öğrenimindeki algoritmalar ve yöntemler, belirli bir sorunu çözmek için daha büyük bir sürecin yalnızca bir parçasıdır ve büyük resmi aklımızdan hiç çıkarmamak gerekir.
