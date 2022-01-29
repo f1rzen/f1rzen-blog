@@ -25,12 +25,6 @@ export default function MakineOgrenmesi() {
                       </a>
                     </h4>
                     <h4>
-                      <a href="#"> ‣ Neden Python?</a>
-                    </h4>
-                    <h4>
-                      <a href="#"> ‣ scikit-learn</a>
-                    </h4>
-                    <h4>
                       <a href="#"> ‣ Gerekli Kütüphaneler Ve Araçlar</a>
                     </h4>
                     <h4>
