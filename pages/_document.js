@@ -21,10 +21,20 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />
+          <link rel="preconnect" href="https://f1rzen-blog.goatcounter.com/count" />
+          <script
+            async
+            data-goatcounter="https://f1rzen-blog.goatcounter.com/count"
+            src="//gc.zgo.at/count.js"
+          ></script>
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
             href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
           />
 
