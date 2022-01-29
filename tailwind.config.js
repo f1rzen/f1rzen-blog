@@ -16,7 +16,8 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Fraunces', ...defaultTheme.fontFamily.sans],
+        sans: ['Epilogue', ...defaultTheme.fontFamily.sans],
+        serif: ['Fraunces', 'sans-serif'],
       },
       colors: {
         primary: colors.emerald,
