@@ -28,7 +28,10 @@ export default function MakineOgrenmesi() {
                       </a>
                     </h4>
                     <h4>
-                      <a href="#"> ‣ Gerekli Kütüphaneler Ve Araçlar</a>
+                      <a href="https://www.f1rzen.com/blog/machine-learning/gerekli-uygulamalar-ve-kutuphaneler">
+                        {' '}
+                        ‣ Gerekli Uygulamalar ve Kütüphaneler
+                      </a>
                     </h4>
                     <h4>
                       <a href="#"> ‣ İlk Adımlar: İris Klasifikasyonu</a>
