@@ -1,0 +1,67 @@
+---
+title: Gerekli Uygulamalar Ve Kütüphaneler
+date: '2022-01-29'
+tags: ['Makine Öğrenmesi', 'Rehber']
+summary: 'Makine öğrenmesi için gerekli programların kurulması'
+---
+
+<TOCInline toc={props.toc} asDisclosure />
+## Gerekli Programlar - ### Anaconda
+
+![anaconda arayüz resmi](/static/images/anaconda_programi.png)
+
+Anacondayı kurun ve her şey tamam! Yüklediğinizde _Jupyter Notebook_, _Spder_ gibi programlar da kurulmuş olacak. Projelerinize uygun environmentları anaconda ile hızlıca oluşturabilirsiniz. Çoğu python kütüphanesi anacondanın varsayılan environmentında yüklü olarak gelmekte.
+Anacondayı [buradan](https://www.anaconda.com/products/individual) indirebilirsiniz.
+
+Eğer anaconda yerine bilgisayarınızdaki kurulu python üzerinden devam etmek isterseniz.
+
+```
+pip install numpy scipy matplotlib ipython scikit-learn pandas
+```
+
+kodunu kullanabilirsiniz.
+
+- ### Spyder 🕸
+
+![spyder arayüz resmi](/static/images/Makine_Ogrenmesi/spyder_ui.png)
+
+Ben Jupyter Notebook yerine spyder'da notebook oluşturarak gitmeyi tercih ettim. Spyderda notebook blokları oluşturmak için `#%%` yazıp entera basmanız yeterli. Anaconda'yı kurduğunuzda bu da yüklenmiş olacak.
+
+## Gerekli Kütüphaneler 📚
+
+- ### NumPy
+
+![numpy banner resmi](/static/images/Makine_Ogrenmesi/numpy_banner.png) [Dokümentasyon Sayfası](https://numpy.org/doc/stable/)
+
+NumPy bilimsel hesaplamalar yaparken olmazsa olmaz paketlerden biridir. Çok boyutlu diziler, lineer cebir işlemleri ve Fourier dönüşümü gibi üst düzey matematiksel fonksiyonlar ve rastgele sayı üretme fonksiyonlarını içinde barındırır. `scikit-learn` kullanırken verilerinizin `numpy` dizisi biçiminde olması gerekir.
+
+- ### SciPy
+  ![scipy logo resmi](/static/images/Makine_Ogrenmesi/scipy_logo.png) [Dokümentasyon Sayfası](https://docs.scipy.org/doc/scipy/)
+
+SciPy'de NumPy gibi bilimsel hesaplamalar için fonksiyonlar içeren bir fonksiyondur. Gelişmiş lineer cebir, matematiksel fonksiyon optimizasyonu, sinyal işleme, özel matematiksel fonksiyonlar ve istatistiksel dağılımları içinde barındırır. `scikit-learn` fonksiyonları ve algoritmaları için SciPy'i kullanır. SciPy'in bizim için en önemli bölümü olan `scipy.parse`, seyrek matrisler (sparse matrices) `scikit-learn`in kullandığı diğer bir veri biçimidir. Seyrek matrisler çoğunlukla sıfır içeren 2 boyutlu verileri saklamak için kullanılır.
+
+- ### matplotlib
+  ![matplotlib logo resmi](/static/images/Makine_Ogrenmesi/matplotlib.png) [Dokümentasyon Sayfası](https://matplotlib.org/stable/api/index.html)
+
+Python ile grafik çizimi denildiğinde akla ilk gelen kütüphanedir matplotlib... Çizgi grafiği, histogram, saçılım grafiği gibi grafikler çizebilir. Veriyi görselleştirmek, veriyi anlayabilmek için oldukça önemlidir.
+
+![matplotlib örnek grafikleri](/static/images/Makine_Ogrenmesi/matplotlib_grafikler.png)
+
+- ### pandas
+
+![pandas logo resmi](/static/images/Makine_Ogrenmesi/pandas_logo.png)
+
+Pandas veriyi düzenlemek ve analizini yapmak için gerekli bir kütüphanedir. DataFrame veri yapısına göre oluşturulmuştur. Excel veri tablosuna benzer. NumPy gibi bütün verilerin aynı türde olması gerekmez. Farklı türden de veriler de kullanılabilir.
+
+- ### mglearn
+
+Bazı örnekleri bu kütüphane üzerinden alacağız. Machine Learning öğretmek için yazılmış bir kütüphane. Bunun dışında -benim anladığım- veri üzerinde bir işlevi yok.
+
+Bu kütüphaneleri genel olarak sürekli kullanacağız. Aşağıdaki kod ile bunları import edebilirsiniz.
+
+```py
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import mglearn
+```
