@@ -24,7 +24,6 @@ class MyDocument extends Document {
 
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link rel="preconnect" href="https://f1rzen-blog.goatcounter.com/count" />
           <link
             href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
             rel="stylesheet"
@@ -40,11 +39,6 @@ class MyDocument extends Document {
             integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
             crossOrigin="anonymous"
           />
-          <script
-            async
-            data-goatcounter="https://f1rzen-blog.goatcounter.com/count"
-            src="//gc.zgo.at/count.js"
-          ></script>
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
           <Main />
