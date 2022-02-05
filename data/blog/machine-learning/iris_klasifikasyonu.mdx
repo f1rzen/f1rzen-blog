@@ -5,7 +5,10 @@ tags: ['Makine Öğrenmesi', Uygulama]
 summary: 'Iris veri seti ile sınıflandırma uygulaması.'
 ---
 
-Hobi olarak botanik ile uğraştığımızı, ve bulduğumuz iris (süsen) çiçeklerinin hangi türe ait olduğunu öğrenmek istediğimizi varsayalım. Her bir çiçeğin çanak (sepal) ve taç yapraklarının (petals) uzunluk ve genişliklerini santimetre cinsiden kaydetmiş olalım.
+<TOCInline toc={props.toc} asDisclosure />
+## Giriş Hobi olarak botanik ile uğraştığımızı, ve bulduğumuz iris (süsen) çiçeklerinin hangi türe ait
+olduğunu öğrenmek istediğimizi varsayalım. Her bir çiçeğin çanak (sepal) ve taç yapraklarının (petals)
+uzunluk ve genişliklerini santimetre cinsiden kaydetmiş olalım.
 
 Ayrıca elimizde uzman bir botanikçinin hazırladığı, yaptığı ölçümlerle _setosa, versicolor, virginica_ türlerinden birine ait olduğunu belirleyebildiği bir veri seti daha var. Hobi botanikçisinin doğada karşılaştığı iris türlerinin sadece bunlar olduğunu varsayalım.
 
@@ -76,7 +79,7 @@ Bu fonksiyon veriyi 2 ye bölmeden önce karıştırdığını söylemiştik. Ya
 
 Şimdi elimizdeki `X_train` veri setindeki satırların 75% ini, `X_test` ise 25% ini içermekte.
 
-## Verimize Bakalım
+## Verinin İncelenmesi
 
 Verimizi incelemek, verideki anormallikleri ve tutarsızlıkları tespit etmek için önemlidir. Ve veriyi incelemenin en güzel ve etkili yolu veriyi görselleştirmektir. Bunun için _scatter plot_ kullanabiliriz. Ancak burdaki veri gibi birden fazla özellik varsa bunların hepsini _scatter plot_ ile çizdiremeyiz. Onun yerine _pair plot_ kullanabiliriz. Burada olduğu gibi az sayıda özelliğiniz varsa (bizim veri setimizde bu sayı 4) _pair plot_ kullanmak oldukça mantıklı olur ki kendisi tüm olabilecek özellik eşleşmelerine bakar, lakin bütün özelliklerinin birbiriyle etkileşimine tek bir seferde bakamaz. Yani bu görselleştirme ile verinin bazı ilginç etkileşimlerini göremeyebiliriz. Burayı tam anlatamadım ancak plot çıktısını görünce daha iyi anlayacaksınız... (umarım 😐).
 
@@ -121,7 +124,7 @@ metric_params=None, n_jobs=1, n_neighbors=1, p=2, weights='uniform')
 
 `fit` metodu bize knn objesini döndürdü. Classifierımızı string olarak görebiliyoruz. Hemen her şey default değerinde iken, ayarladığımız `n_neighbors` değeri 1 e eşit. (default değeri normalde 5) Diğer parametreleri şuan için düşünmeye gerek yok.
 
-## Tahmin Yapma
+### Tahmin Yapma
 
 Artık kurduğumuz modelle türlerini bilmediğimiz veri üzerinde tahmin yaptırtabiliriz. Bunun için knn objesinin `predict` metodunu kullanacağız. Ormanda bir iris çiçeği bulduğumuzu düşünelim ve bu çiçeğin sepal_length değeri 5cm, sepal_width değeri 2.9 cm, petal_length değeri 1cm, ve petal_width değer 0.2 olsun. Bu çiçeğin türü ne olabilir? Ölçtüğümüz verileri NumPy dizisine ekleyelim. Elimizde 1 örnekli, 4 özellikli bir dizi olması gerekiyor.
 
@@ -150,7 +153,7 @@ Predicted target name: ['setosa']
 
 Modelimiz yeni irisimizin classını 0 olarak belirledi. Bu da setosa ya tekabül ediyor. Modelimiz bunu buldu. İyi ama bunun doğru olduğunu nerden bilecez? 🧐 İşte bütün olay bu! Bu örneğin hangi türe ait olduğunu bilmiyoruz.
 
-## Modelin Değerlendirilmesi
+### Modelin Değerlendirilmesi
 
 İşte burada daha önce oluşturduğumuz test set verisi önem arz ediyor. Bundaki veriler model oluşturmak için kullanılmadı. Ancak test setteki çiçeklerin hangi türe ait olduğunu biliyoruz. Öyleyse her bir çiçek için tahmin yapabilir ve bunları doğruları ile kıyaslayabiliriz. Modelin ne kadar iyi çalıştığını öğrenmek için _accuracy_'i hesaplayabiliriz.
 

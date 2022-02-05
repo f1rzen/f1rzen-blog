@@ -34,7 +34,10 @@ export default function MakineOgrenmesi() {
                       </a>
                     </h4>
                     <h4>
-                      <a href="#"> ‣ İlk Adımlar: İris Klasifikasyonu</a>
+                      <a href="https://www.f1rzen.com/blog/machine-learning/iris_klasifikasyonu">
+                        {' '}
+                        ‣ İlk Adımlar: İris Klasifikasyonu
+                      </a>
                     </h4>
                   </li>
                 </ul>
